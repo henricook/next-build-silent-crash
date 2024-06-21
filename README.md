@@ -6,7 +6,9 @@ Note, exit code of zero. Maybe systemd-run hides the error code :shrug:
 
 ### With docker (preferred)
 
-`docker build . --memory 128M --no-cache`
+- `cd /path/to/next-build-silent-crash`
+- `npm i`
+- `docker build . --memory 128M --no-cache`
 
 ```
 Step 5/6 : RUN NODE_OPTIONS="--max-old-space-size=64 --stack-trace-limit=100" npm run build
